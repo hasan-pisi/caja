@@ -16,7 +16,8 @@
 # Butterfly <gokhanlnx@gmail.com>, 2021
 # Sabri Ünal <libreajans@gmail.com>, 2022
 # Stefano Karapetsas <stefano@karapetsas.com>, 2022
-# 
+# Hasan YILDIZ <hasanyildiz0@yaani.com>, 2023
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: caja 1.26.0\n"
@@ -2334,7 +2335,7 @@ msgstr ""
 
 #: libcaja-private/caja-file-operations.c:2930
 msgid "There is %"
-msgstr ""
+msgstr "%da"
 
 #: libcaja-private/caja-file-operations.c:2958
 msgid "The destination is read-only."
@@ -3765,6 +3766,51 @@ msgid ""
 "and may not reflect the actual contents of the file, unlike the \"type\" "
 "setting (above)."
 msgstr ""
+"Tüm görünüm modlarındaki öğeler için varsayılan sıralama düzeni. Olası değerler: - "
+"\"manuel olarak\": Simge ve kompakt görünüm modlarında, kullanıcının ve "
+"öğeleri, kullanıcının düzenlemesini istediği şekilde düzenleyin, yalnızca "
+"her öğeyi kullanıcının istediği yere sürüklemek. Liste görünümü modunda, bu "
+"ayar, \"ad\" ile eşdeğerdir (hemen aşağıya bakın). - \"ad\": Sırala "
+"öğeler adlarına göre; örneğin, \"a.txt\" adlı bir dosya sıralanır "
+"\"b.txt\" adlı bir dosyadan önce. Bu, varsayılan değerdir. - \"dizin\": Sırala "
+"öğeleri tam yol adlarına göre. Örneğin, " altında \"b.txt\" adlı bir dosya
+"\"/home/a\" dizini \"a.txt\" adlı bir dosyadan önce sıralanacaktır.
+" \"/home/zzz\" dizini. Caja genellikle yalnızca bir " altındaki dosyaları görüntülediğinden
+"dizin herhangi bir zamanda, bu ayar genellikle şuna eşdeğer olacaktır:"
+" \"isim\" seçeneği (yukarıda), Caja arama aracı dışında "
+"birden çok alt dizindeki dosyaları dolaşın. - \"boyut\": Öğeleri şuna göre sıralayın: "
+"dosya boyutları veya öğeler dizin ise, öğe sayısına göre"
+"içerirler. - \"tip\": Öğeleri insan tarafından okunabilir türlerine göre sıralayın "
+"açıklama. Bu tip tanımlamalar, örneğin, \"düz " biçimini alır.
+"metin belgesi\" veya \"SVG görüntüsü\". Dosyanın türü mutlaka "
+"dosyanın \"uzantısı\" ile ilgili (aşağıya bakın). - \"mtime\": Öğeleri şuna göre sıralayın: "
+"son değiştirilme zamanları. - \"btime\": Öğeleri şuna göre sırala: "
+"her dosyanın oluşturulduğu tarih ve saat. Tüm dosyaların bir"
+" oluşturma süresi kaydedildi, bu nedenle bu ayar her zaman beklendiği gibi çalışmayabilir "
+"özellikle eski dosya sistemleriyle \"biçimlendirilmiş\" çıkarılabilir ortamlarda"
+FAT gibi. - \"atime\": Öğeleri, her bir "
+"dosyaya en son erişildi. Genellikle \"erişilen\", dosyanın "
+"dosya bir kullanıcı veya program tarafından okundu. Performans nedenleriyle, "
+"bazı dosya sistemleri, dosya her okunduğunda bu zaman damgasını güncellemez"
+"dolayısıyla bu alan hatalı olabilir. - \"amblemler\": Öğeleri adlarına göre sıralayın "
+"her öğeyle ilişkili amblemler (varsa). - \"çöp zamanı\": Öğeleri sırala"
+" dosyanın Çöp Kutusuna taşındığı tarih ve saate göre. Bu ayar"
+" yalnızca şu anda Çöp Kutusu'ndaki dosyalar için geçerli olduğundan nadiren yararlıdır. - "
+"\"size_on_disk\": Her öğenin gerçek disk alanı miktarına göre sıralayın "
+"tüketir. Bu rakam genellikle geleneksel boyuttan biraz daha büyüktür "
+"dosyanın, çünkü çoğu dosya sistemi dosyaları dosyanın bir çift katına çıkarır"
+Birçok dosya sisteminde 4096 bayt veya yaklaşık 4 olan " \"blok boyutu\"
+"kilobayt. Birkaç dosya diskte gelenekselden daha az yer kullanabilir"
+"olarak bilinen bazı dosya sistemlerinin bir özelliği nedeniyle dosya boyutu belirtilebilir.
+"\"delikler\". Bu ayar, dizinleri mutlaka numaraya göre sıralamaz "
+"bir dizin tarafından kullanılan disk alanı miktarı olduğundan, içerdikleri dosyaların sayısı"
+" mutlaka bir dizindeki dosya sayısıyla ilgili değildir; diğer "
+"bir dizinin gerçek boyutuna katkıda bulunabilecek faktörler, uzunluğu içerir"
+"dizin içindeki her dosyanın adlarından ve ilginç bir şekilde kaç tane"
+" dizinin içerdiği dosyalar. - \"uzantı\": Her bir öğenin "
+"dosya uzantısı (varsa). Dosyanın uzantısı, dosya adının bir parçasıdır, "
+"ve \"type\" türünden farklı olarak dosyanın gerçek içeriğini yansıtmayabilir "
+"ayar (yukarıda)."
 
 #: libcaja-private/org.mate.caja.gschema.xml:220
 msgid "Reverse sort order in new windows"
@@ -4849,7 +4895,7 @@ msgstr "Geçmişi Göster"
 #: src/caja-image-properties-page.c:170
 #, c-format
 msgid "<b>%s:</b>"
-msgstr ""
+msgstr "<b>%s:</b>"
 
 #: src/caja-image-properties-page.c:292
 msgid "Camera Brand"
@@ -4922,14 +4968,14 @@ msgstr "Değerlendirme"
 
 #: src/caja-image-properties-page.c:420
 msgid "Image Type"
-msgstr ""
+msgstr "Resim türü"
 
 #: src/caja-image-properties-page.c:422 src/caja-image-properties-page.c:428
 #, c-format
 msgid "%d pixel"
 msgid_plural "%d pixels"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d piksel"
+msgstr[1] "%d pikseller"
 
 #: src/caja-image-properties-page.c:426
 msgid "Width"
